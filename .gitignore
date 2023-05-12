@@ -31,3 +31,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+#FILES I ADDED
+lib/tasks/addfromexcel.rb
+country currency flag and symbol.xlsx

@@ -1,24 +1,39 @@
-# README
+README.md
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Welcome to the Nations API
 
-Things you may want to cover:
+This is a simple API that provides information about different nations of the world.
 
-* Ruby version
+## Usage
 
-* System dependencies
+The API provides information about nations in the JSON format. By default, it returns the name of the nation, its currency symbol, and flag.
 
-* Configuration
+You can make a request to the following endpoint to get information about all nations:
 
-* Database creation
+`GET /api/v1/welcome/getdata`
 
-* Database initialization
+The response will be a JSON array containing information about all the nations in the database. Here's an example:
 
-* How to run the test suite
+```
+[
+  {
+    "name": "Nigeria",
+    "symbol": "$",
+    "flag": "greenwhitegreen"
+  },
+  {
+    "name": "United States",
+    "symbol": "$",
+    "flag": "starsandstripes"
+  },
+  ...
+]
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contributing
 
-* Deployment instructions
+Contributions are welcome! Feel free to submit a pull request or open an issue if you encounter any problems or have suggestions for improvement.
 
-* ...
+## License
+
+This project is licensed under the MIT License.
