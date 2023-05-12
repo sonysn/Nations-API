@@ -2,7 +2,7 @@ require 'roo'
 
 class Api::V1::WelcomeController < ApplicationController
     def hello
-        import_data_from_file('country_currency_flag_and_symbol.xlsx')
+        import_data_from_file('country currency flag and symbol.xlsx')
         nations = National.all
         nations_json = nations.to_json(only: [:NAME, :SYMBOL, :FLAGS])
         render json: nations_json
